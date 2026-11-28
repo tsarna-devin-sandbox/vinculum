@@ -1,14 +1,14 @@
 package ambient
 
 import (
+	"github.com/tsarna/ctyx/envcty"
 	cfg "github.com/tsarna/vinculum/config"
-	"github.com/tsarna/vinculum/hclutil"
 	"github.com/zclconf/go-cty/cty"
 )
 
 func init() {
 	cfg.RegisterAmbientProvider("env", func(c *cfg.Config) cty.Value {
-		return hclutil.EnvObjectFrom(c.Environ())
+		return envcty.MapFrom(c.Environ())
 	}, cfg.WithNamespaceSchema(envNamespace))
 }
 

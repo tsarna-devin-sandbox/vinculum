@@ -6,7 +6,7 @@ import (
 	"slices"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/tsarna/vinculum/hclutil"
+	"github.com/tsarna/ctyx/envcty"
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/function"
 	"go.uber.org/zap"
@@ -91,7 +91,7 @@ name here is reported by the plugin, not by Vinculum.
 func vinitEvalContext() *hcl.EvalContext {
 	return &hcl.EvalContext{
 		Variables: map[string]cty.Value{
-			"env": hclutil.EnvObject(),
+			"env": envcty.Map(),
 		},
 		Functions: vinitStdlibFunctions(),
 	}

@@ -111,7 +111,7 @@ functions/      Built-in HCL functions (log, stdlib, jq, diff, mcp_*, http, heal
                 parameter has to be faked with a variadic, which erases its name,
                 type, and default (health::status/failing's `probe`)
 repl/           Interactive REPL (serve -i)
-hclutil/        Shared HCL helpers (ContextObjectBuilder, capsule/ctx/auth/env/tracing)
+hclutil/        Shared HCL helpers (ContextObjectBuilder, capsule/ctx/auth/tracing)
 internal/       Internal-only helpers
   schemadoc/    Renders config.SchemaDocument as documentation: resolver
                 (topic path -> node), keyword search (apropos.go, behind
@@ -368,8 +368,9 @@ population, so plugin-registered contributions are visible to the rest of
 
 Built in `vinitEvalContext()` in `config/vinit.go`:
 
-- `env.<NAME>` — via `hclutil.EnvObject()` (the canonical env-to-cty
-  helper, shared with the `ambient` package's `env` provider).
+- `env.<NAME>` — via `envcty.Map()` from `github.com/tsarna/ctyx/envcty`
+  (the canonical env-to-cty helper, shared with the `ambient` package's `env`
+  provider).
 - Stdlib functions — looked up by name (`"stdlib"`) in the
   `functionPlugins` registry. The stdlib FunctionPlugin's getter ignores
   its `*Config` argument so passing `nil` is safe.

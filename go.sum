@@ -267,8 +267,8 @@ github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.12.1 h1:EuwCh5fleGS7H32xRwO3wRGT7DxrDhLAT6FF8MpWDWE=
 github.com/stretchr/testify v1.12.1/go.mod h1:MDEgiDPPsNp5cuIrHPPCyornHKgEVbtFUmoNlxoYthg=
-github.com/tsarna/ctyx v0.7.0 h1:90Fi9kSZifBxYUA49za8ItzZYsA563UrcONrVTRg+LA=
-github.com/tsarna/ctyx v0.7.0/go.mod h1:qQCSPbGYOUt1DPgTy+bPAZEEkFSpqfg4zm4YSnRZsP4=
+github.com/tsarna/ctyx v0.8.0 h1:5LF4BHj5YRyTfidwUUw4W0vTqm8z1TkfPZy8H6qiK9c=
+github.com/tsarna/ctyx v0.8.0/go.mod h1:qQCSPbGYOUt1DPgTy+bPAZEEkFSpqfg4zm4YSnRZsP4=
 github.com/tsarna/functy v0.15.0 h1:JIGxexKpeuSieas6w28VnKKd7xJOGLkcVhJ4uTAfedc=
 github.com/tsarna/functy v0.15.0/go.mod h1:ornOGRwIn6OsIf7AnYkAdNegwP57rhBWiYFpDONsnFQ=
 github.com/tsarna/go-structdiff v0.2.1 h1:SD30U/azJB85tH9dgNu4qVOA2bPie9e1l5EvJodMaD8=

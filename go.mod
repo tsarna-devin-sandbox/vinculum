@@ -34,7 +34,7 @@ require (
 	github.com/spf13/cobra v1.10.2
 	github.com/spf13/pflag v1.1.0
 	github.com/stretchr/testify v1.12.1
-	github.com/tsarna/ctyx v0.7.0
+	github.com/tsarna/ctyx v0.8.0
 	github.com/tsarna/functy v0.15.0
 	github.com/tsarna/go-structdiff v0.2.1
 	github.com/tsarna/hcl-jqfunc v0.1.5
